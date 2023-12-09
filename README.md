@@ -23,6 +23,24 @@
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+## <div align="center"> 🚥 _Installation and USAGE_
+
+<details>
+To set up and use this project locally for development or testing purposes, follow these steps:
+
+To get started, you'll need to clone this repository to your local machine. Open your terminal or command prompt and use the following command to do so:
+1. git clone https://github.com/DaniyaYelemessova/Pizza-Parlor.git
+2. Navigate to the Project Directory, using **cd**
+3. Open the project using **code .**
+4. Customize your pizza:
+      * Choose your desired toppings by checking the checkboxes (meatballs, pepperoni, artichoke, or anchovy)
+      * Select the pizza size from the available options
+5. Click the "Order" button to see the calculated final cost for your customized pizza.
+6. Enjoy your personalized pizza experience with Pizza Parlor!
+</details>
+
+## <div align="center"> ⌨️ _Tests_
+
 ```
 Describe: Pizza()
 
