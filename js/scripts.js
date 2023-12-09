@@ -29,6 +29,11 @@ Pizza.prototype.finalPrice = function () {
   return basePrice;
 };
 
+function reset(){
+  const form = document.querySelector("#form");
+  form.reset()
+}
+
 function handlePizzaForm(e) {
   e.preventDefault();
   const orderName = document.getElementById("name").value;
@@ -45,7 +50,11 @@ function handlePizzaForm(e) {
   const sizeOutput = document.querySelector("#sizeOutput");
   sizeOutput.textContent = `Your size: ${sizeSelection}.`;
   const toppingsOutput = document.querySelector("#toppingsOutput");
-  toppingsOutput.textContent = `Toppings: ${toppingsSelectionArray.join(" , ")}`
+  toppingsOutput.textContent = `Toppings: ${toppingsSelectionArray.join(" , ")}`;
+  const totalPrice = document.querySelector("#totalPrice");
+  totalPrice.textContent = `Final price: $${newPizza.finalPrice()}`;
+
+  reset()
 }
 
 document.addEventListener("DOMContentLoaded", function () {
