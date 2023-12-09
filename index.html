@@ -7,12 +7,52 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<h1>Pizza Parlor</h1>
+<h2>Welcome to our special pizza week! Base pizza price is <em>$30</em>, which includes homemade tomato sauce with herbs and a ton of cheese!</h2>
+<form id="form">
+  <Label id="name">What is your name?</Label>
+  <input type="text" id="name" required>
 
+  <h3>Choose your size:</h3>
+  <label>
+    <input type="radio" name="size" value="large" checked>
+    large
+  </label>
+  <label>
+    <input type="radio" name="size" value="medium">
+    medium
+  </label>
+  <label>
+    <input type="radio" name="size" value="small">
+    small
+  </label>
 
+  <h3>Choose your topping(s):</h3>
+  <label>
+    <input type="checkbox" name="topping" value="pepperoni">
+    pepperoni
+  </label>
+  <label>
+    <input type="checkbox" name="topping" value="meatballs">
+    meatballs
+  </label>
+  <label>
+    <input type="checkbox" name="topping" value="anchovy">
+    anchovy
+  </label>
+  <label>
+    <input type="checkbox" name="topping" value="artichoke">
+    artichoke
+  </label>
+  <label>
+    <input type="checkbox" name="topping" value="no topping">
+    no topping
+  </label>
+  <button type="submit">Order</button>
+</form>
 
-
-
-
+<div id="welcome"></div>
+<div id="orderOutput"></div>
   <script src="js/scripts.js"></script>
 </body>
 </html>

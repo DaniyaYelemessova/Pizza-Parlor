@@ -14,7 +14,7 @@ Pizza.prototype.finalPrice = function () {
     } else if (topping === "artichoke") {
       basePrice += 3;
     }else if(topping === "no topping"){
-      basePrice
+      basePrice += 0
     }
   }
 
@@ -29,6 +29,6 @@ Pizza.prototype.finalPrice = function () {
   return basePrice;
 };
 
-const myPizza = new Pizza("no topping", "small");
+const myPizza = new Pizza("no topping", "medium");
 
 console.log(myPizza.finalPrice());
