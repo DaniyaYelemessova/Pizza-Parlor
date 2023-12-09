@@ -29,6 +29,13 @@ Pizza.prototype.finalPrice = function () {
   return basePrice;
 };
 
-const myPizza = new Pizza("no topping", "medium");
 
-console.log(myPizza.finalPrice());
+function handlePizzaForm(e){
+  e.preventDefault();
+};
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  const form = document.querySelector("#form");
+  form.addEventListener("submit", handlePizzaForm)
+})
