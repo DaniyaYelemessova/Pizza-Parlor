@@ -19,6 +19,7 @@
 - JavaScript
 - Visual Studio Code
 - GIT
+- Test-Driven Development
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -67,3 +68,34 @@ myPizza.finalPrice()
 Expected Output: 45 (base price + pepperoni topping + artichoke topping  + medium size)
 
 ```
+
+
+### <div align="center"> 🤔 _Description:_
+
+_Pizza Parlor_
+
+"Pizza Parlor" is a web application that enables users to customize their pizza orders. Users can select individual toppings, such as meatballs, pepperoni, artichoke, and anchovy, along with choosing the size of the pizza. The application utilizes a pizza object constructor with properties for toppings and size. It includes a prototype method that calculates the final cost based on the user's selections. This project provides a straightforward and interactive platform for pizza customization and order placement.
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## <div align="center"> <img src="images/github.png" alt="github icon" width="30px"> _Link to site on Github Pages:_
+
+- [GitHub page link](https://github.com/DaniyaYelemessova/Pizza-Parlor.git)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## <div align="center"> _Known Issues_
+
+-no known issues at this time.
+
+## <div align="center"> 📬 _Contact Information_
+
+#### For any questions _[LinkedIn](www.linkedin.com/in/daniya-collings)_
+
+## <div align="center"> 📘 _License and copyright:_
+
+> **_© Daniya Yelemessova, 2023_**  
+> ⚖️ _[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)_
+
+
