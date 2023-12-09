@@ -32,6 +32,11 @@ Pizza.prototype.finalPrice = function () {
 
 function handlePizzaForm(e){
   e.preventDefault();
+  const orderName = document.getElementById("name").value;
+  const sizeSelection = document.querySelector("input[name='size']:checked").value;
+  const toppingsSelection = document.querySelectorAll("input:checked");
+  const toppingsSelectionArray = Array.from(toppingsSelection).map(checkbox => checkbox.value)
+  console.log(toppingsSelectionArray)
 };
 
 
