@@ -35,3 +35,8 @@ Test: "it should calculate final price correctly for medium size pizza and toppi
 Code: const myPizza = new Pizza("pepperoni", "medium");
 myPizza.finalPrice()
 Expected Output: 42 (base price + pepperoni topping + medium size)
+
+Test: "it should calculate final price correctly for medium size pizza and two different toppings"
+Code: const myPizza = new Pizza(["pepperoni", "artichoke"], "medium");
+myPizza.finalPrice()
+Expected Output: 45 (base price + pepperoni topping + artichoke topping  + medium size)
