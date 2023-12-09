@@ -35,8 +35,9 @@ function handlePizzaForm(e){
   const orderName = document.getElementById("name").value;
   const sizeSelection = document.querySelector("input[name='size']:checked").value;
   const toppingsSelection = document.querySelectorAll("input:checked");
-  const toppingsSelectionArray = Array.from(toppingsSelection).map(checkbox => checkbox.value)
-  console.log(toppingsSelectionArray)
+  const toppingsSelectionArray = Array.from(toppingsSelection).map(checkbox => checkbox.value);
+  const newPizza = new Pizza(toppingsSelectionArray, sizeSelection);
+  console.log(newPizza)
 };
 
 
