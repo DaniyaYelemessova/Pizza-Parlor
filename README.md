@@ -10,3 +10,8 @@ Test: "it should calculate final price correctly for pepperoni topping"
 Code: const myPizza = new Pizza("pepperoni", "medium");
 myPizza.finalPrice()
 Expected Output: 37 (base price(30) + topping cost)
+
+Test: "it should calculate final price correctly for pizza without topping"
+Code: const myPizza = new Pizza("no topping", "medium");
+myPizza.finalPrice()
+Expected Output: 30 (base price)

@@ -11,6 +11,6 @@ Pizza.prototype.finalPrice = function(){
   return basePrice
 }
 
-const myPizza = new Pizza("pepperoni", "medium");
+const myPizza = new Pizza("no topping", "medium");
 
 console.log(myPizza.finalPrice())
