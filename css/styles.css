@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 750px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Kalnia', serif;
+}
+
+h2{
+  text-align: center;
+}
+
+.basic{
+  text-decoration: underline;
+  font-family: 'Open Sans', sans-serif;
+}
