@@ -1,7 +1,16 @@
-function Pizza(toppings, size){
+function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
 }
 
-const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
-console.log(myPizza)
+Pizza.prototype.finalPrice = function(){
+  let basePrice = 30;
+  if(this.toppings === "pepperoni"){
+    basePrice += 7
+  }
+  return basePrice
+}
+
+const myPizza = new Pizza("pepperoni", "medium");
+
+console.log(myPizza.finalPrice())
