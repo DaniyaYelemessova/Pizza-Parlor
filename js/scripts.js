@@ -12,9 +12,13 @@ Pizza.prototype.finalPrice = function(){
   }else if(this.toppings === "artichoke"){
     basePrice += 3
   }
+  
+  if(this.size === "medium"){
+    basePrice += 5
+  }
   return basePrice
 }
 
-const myPizza = new Pizza("artichoke", "medium");
+const myPizza = new Pizza("no topping", "medium");
 
 console.log(myPizza.finalPrice())
