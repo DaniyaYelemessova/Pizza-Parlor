@@ -45,7 +45,7 @@ function handlePizzaForm(e) {
   const newPizza = new Pizza(toppingsSelectionArray, sizeSelection);
 
   const welcomeName = document.querySelector("#welcome");
-  welcomeName.textContent = `Welcome, ${orderName}! Happy to see you today!`;
+  welcomeName.textContent = `Thank you for your order, ${orderName}!`;
 
   const sizeOutput = document.querySelector("#sizeOutput");
   sizeOutput.textContent = `Your size: ${sizeSelection}.`;
