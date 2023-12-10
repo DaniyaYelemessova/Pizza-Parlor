@@ -8,7 +8,7 @@
   <img src="images/js.png" alt="js" width="30"/>
 </p>
 
-<div><img src="images/screenshot.png" alt="screen of the program" width="50%" display="block" margin-left="auto" margin-right="auto"/></div>
+<div><img src="images/pizza.png" alt="screen of the program" width="50%" display="block" margin-left="auto" margin-right="auto"/></div>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
