@@ -31,7 +31,7 @@ Pizza.prototype.finalPrice = function () {
 
 function reset(){
   const form = document.querySelector("#form");
-  form.reset()
+  form.reset();
 }
 
 
@@ -60,7 +60,7 @@ function handlePizzaForm(e) {
   const totalPrice = document.querySelector("#totalPrice");
   totalPrice.textContent = `Final price: $${newPizza.finalPrice()}`;
 
-  reset()
+  reset();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
