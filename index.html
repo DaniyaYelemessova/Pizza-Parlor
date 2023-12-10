@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pizza Parlor</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-<h1>Pizza Parlor</h1>
-<h2>Imagine a golden, crispy crust that's the perfect combo of chewy and crunchy. Our secret tomato sauce is the star, bursting with sun-kissed tomato goodness and a dash of herbs.</h2>
-<h2 class="basic">Base price is $30</h2>
-<div class="orderAndDisplay">
-<form id="form">
-  <h2>Oline order</h2>
-  <Label for="name">What is your name?</Label>
-  <input type="text" id="name" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Parlor</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pizza Parlor</h1>
+      <h2>
+        Imagine a golden, crispy crust that's the perfect combo of chewy and
+        crunchy. Our secret tomato sauce is the star, bursting with sun-kissed
+        tomato goodness and a dash of herbs.
+      </h2>
+      <h2 class="basic">Base price is $30</h2>
+      <div class="orderAndDisplay">
+        <form id="form">
+          <h2>Oline order</h2>
+          <label for="name">What is your name?</label>
+          <input type="text" id="name" required />
 
-  <h3>Choose your size:</h3>
-  <label>
-    <input type="radio" name="size" value="large" checked>
-    large
-  </label>
-  <label>
-    <input type="radio" name="size" value="medium">
-    medium
-  </label>
-  <label>
-    <input type="radio" name="size" value="small">
-    small
-  </label>
+          <h3>Choose your size:</h3>
+          <label>
+            <input type="radio" name="size" value="large" checked />
+            large
+          </label>
+          <label>
+            <input type="radio" name="size" value="medium" />
+            medium
+          </label>
+          <label>
+            <input type="radio" name="size" value="small" />
+            small
+          </label>
 
-  <h3>Choose your topping(s):</h3>
-  <label>
-    <input type="checkbox" name="topping" value="pepperoni">
-    pepperoni
-  </label>
-  <label>
-    <input type="checkbox" name="topping" value="meatballs">
-    meatballs
-  </label>
-  <label>
-    <input type="checkbox" name="topping" value="anchovy">
-    anchovy
-  </label>
-  <label>
-    <input type="checkbox" name="topping" value="artichoke">
-    artichoke
-  </label>
-  <label>
-    <input type="checkbox" name="topping" value="no topping">
-    no topping
-  </label>
-  <button type="submit" class="btnSubmit">Order</button>
-</form>
-<div class="orderOutput">
-  <h2>Your order:</h2>
-<div id="welcome"></div>
-<div id="sizeOutput"></div>
-<div id="toppingsOutput"></div>
-<div id="totalPrice"></div>
-</div>
-</div>
-</div>
-  <script src="js/scripts.js"></script>
-</body>
+          <h3>Choose your topping(s):</h3>
+          <label>
+            <input type="checkbox" name="topping" value="pepperoni" />
+            pepperoni
+          </label>
+          <label>
+            <input type="checkbox" name="topping" value="meatballs" />
+            meatballs
+          </label>
+          <label>
+            <input type="checkbox" name="topping" value="anchovy" />
+            anchovy
+          </label>
+          <label>
+            <input type="checkbox" name="topping" value="artichoke" />
+            artichoke
+          </label>
+          <label>
+            <input type="checkbox" name="topping" value="no topping" />
+            no topping
+          </label>
+          <p class="hidden" id="warning">Choose your topping(s) or click "no topping"</p>
+          <button type="submit" class="btnSubmit">Order</button>
+        </form>
+        <div class="orderOutput">
+          <h2>Your order:</h2>
+          <div id="welcome"></div>
+          <div id="sizeOutput"></div>
+          <div id="toppingsOutput"></div>
+          <div id="totalPrice"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

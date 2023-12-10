@@ -34,6 +34,7 @@ function reset(){
   form.reset()
 }
 
+
 function handlePizzaForm(e) {
   e.preventDefault();
   const orderName = document.getElementById("name").value;
@@ -42,6 +43,11 @@ function handlePizzaForm(e) {
   const toppingsSelectionArray = Array.from(toppingsSelection).map(
     (topping) => topping.value
   );
+  if(toppingsSelectionArray.length === 0){
+    document.querySelector("#warning").removeAttribute("class");
+    return
+  }
+  document.querySelector("#warning").classList.add("hidden");
   const newPizza = new Pizza(toppingsSelectionArray, sizeSelection);
 
   const welcomeName = document.querySelector("#welcome");
